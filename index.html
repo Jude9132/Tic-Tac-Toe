@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>TIC<br/>TAC<br/>TOE</h1>
+      <div class="score-panel">
+        <div class="score-block" id="score-x">
+          <span class="score-label">X</span>
+          <span class="score-num" id="score-x-num">0</span>
+        </div>
+        <div class="score-block draws">
+          <span class="score-label">DRAWS</span>
+          <span class="score-num" id="score-draws-num">0</span>
+        </div>
+        <div class="score-block" id="score-o">
+          <span class="score-label">O</span>
+          <span class="score-num" id="score-o-num">0</span>
+        </div>
+      </div>
+    </header>
+ 
+    <main>
+      <div class="status-bar">
+        <p id="status">Player X's turn</p>
+      </div>
+ 
+      <div class="board" id="board" role="grid" aria-label="Tic Tac Toe board">
+        <button class="cell" data-index="0" aria-label="Cell 1" role="gridcell"></button>
+        <button class="cell" data-index="1" aria-label="Cell 2" role="gridcell"></button>
+        <button class="cell" data-index="2" aria-label="Cell 3" role="gridcell"></button>
+        <button class="cell" data-index="3" aria-label="Cell 4" role="gridcell"></button>
+        <button class="cell" data-index="4" aria-label="Cell 5" role="gridcell"></button>
+        <button class="cell" data-index="5" aria-label="Cell 6" role="gridcell"></button>
+        <button class="cell" data-index="6" aria-label="Cell 7" role="gridcell"></button>
+        <button class="cell" data-index="7" aria-label="Cell 8" role="gridcell"></button>
+        <button class="cell" data-index="8" aria-label="Cell 9" role="gridcell"></button>
+      </div>
+ 
+      <div class="controls">
+        <button id="reset-btn" class="btn-reset">New Game</button>
+        <button id="mode-btn" class="btn-mode">vs CPU</button>
+      </div>
+    </main>
+  </div>
+ 
+  <script src="game.js"></script>
+</body>
+</html>
